@@ -1,0 +1,60 @@
+body{
+    background-image: url(../pictures/purpleGradient.jfif);
+    background-repeat: repeat top-left;
+    background-position: cover;
+    
+}
+
+.title{
+    
+    color: whitesmoke;
+    font-size: 1.4rem;
+    
+}
+.body{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    position: absolute;
+    height: 50%;
+    overflow: auto;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+.bodyText{
+    border-bottom: 2px solid;
+}
+.footer{
+    position: fixed;
+    top: 65%;
+    width: 100%;
+}
+.addbtn{
+    background-color: none;
+    border: none;
+    color: rgb(245, 245, 245);
+}
+.generateBtn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 44, 197);
+}
+.generateBtn:focus,.generateBtn:active{
+    color: white !important;
+    outline: none !important;;
+    box-shadow: none !important;;
+}
+
+.warning{
+    background-color: rgb(197, 197, 12);
+}
+.numberValue{
+    font-size: 1.5rem;
+}
+.goBack{
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+.goBack:hover{
+    color: rgb(255, 255, 255);
+}
+.cardSize{
+    width: 14rem;
+}

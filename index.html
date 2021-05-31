@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/56b4d4f868.js" crossorigin="anonymous"></script>
+    <title>RandomGroupGenerator</title>
+</head>
+
+<body >
+    <div id="groupMaker">
+
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center title align-items-center">
+                <h1>Group Generator <i class="fas fa-users fa-md "></i></h1> 
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 body" id="nameList">
+        <div class="row">
+            <div class="col-12 mb-2 d-flex justify-content-center">
+                <h2 class="bodyText">Names will appear below</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Type name here" aria-label="Add Name"
+                        aria-describedby="add-button" id="nameEntered">
+                    <button class="btn addbtn" type="button" id="addButton"><strong>Add</strong></button>
+                </div>
+            </div>
+            <div class="col-1"></div>
+
+            <div class="col-1 d-none" id="validity"></div>
+            <div class="col-10 warning pt-2 mb-2 d-none" id="validity2">
+                <h4>No numbers, special characters, or identical names</h4>
+            </div>
+            <div class="col-1 d-none" id="validity3"></div>
+
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="d-grid gap-1">
+                    <button class="btn generateBtn" type="button"
+                        id="randomNameGen">Create A Random Name</button>
+                    <button class="btn generateBtn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        id="generateSize">Generate groups by people per group</button>
+                    <button class="btn generateBtn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        id="generateGroups">Generate groups by number of groups</button>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" id="modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <label for="customRange" class="form-label" ></label>
+                    <input type="range" class="form-range" min="1" max="" value="customRange.value" id="customRange" name="customRange"
+                        oninput="chosenRange.value=customRange.value" > 
+                        <output class="d-flex justify-content-center numberValue" id="chosenRange"></output>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirm" data-bs-dismiss="modal">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
